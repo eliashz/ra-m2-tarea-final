@@ -1,4 +1,4 @@
-import { Text, Title } from './components/atoms'
+import { Text } from './components/atoms'
 import { Body } from './components/layout'
 
 function App() {

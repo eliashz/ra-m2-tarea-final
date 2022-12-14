@@ -1,23 +1,35 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FlexBox } from '../../styles'
+import { colors, FlexBox } from '../../styles'
+import { Text, Title } from '../atoms'
 
 const HeaderStyled = styled(FlexBox)`
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0.4rem 2rem;
+`
+const UlStyled = styled(FlexBox)`
+  font-size: 0.7em;
+  color: ${colors.main};
+  gap: 1em;
+`
+
+const LiStyled = styled.li`
+  cursor: pointer;
+  list-style: none; 
+  &:hover {
+      font-weight: bold;
 `
 
 function Header() {
   return (
-    <HeaderStyled direction="row" justify="space-between">
-      <div>MIPISO.com</div>
-      <div>
-        <ul>
-          <li>Buscador</li>
-          <li>Datos</li>
-          <li>Mi Perfil</li>
-        </ul>
-      </div>
+    <HeaderStyled direction="row" justify="space-between" align="center">
+      <Title as="h1" fontSize=".8em" fontFamily="'Comfortaa', cursive;">
+        MIPISO.com
+      </Title>
+      <UlStyled direction="row">
+        <LiStyled>Buscador</LiStyled>
+        <LiStyled>Datos</LiStyled>
+        <LiStyled>Mi Perfil</LiStyled>
+      </UlStyled>
     </HeaderStyled>
   )
 }
