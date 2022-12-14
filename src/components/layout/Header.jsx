@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { colors, FlexBox } from '../../styles'
-import { Text, Title } from '../atoms'
+import { Title } from '../atoms'
 
 const HeaderStyled = styled(FlexBox)`
   padding: 0.4rem 2rem;
