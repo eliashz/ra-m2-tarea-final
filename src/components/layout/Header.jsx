@@ -22,7 +22,7 @@ const LiStyled = styled.li`
 function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between" align="center">
-      <Title as="h1" fontSize=".8em" fontFamily="'Comfortaa', cursive;">
+      <Title as="h1" fontSize=".6em" fontFamily="'Comfortaa', cursive;">
         MIPISO.com
       </Title>
       <UlStyled direction="row">
