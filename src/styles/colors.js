@@ -6,4 +6,5 @@ export const colors = {
     base: '#444',
     headings: '#121212',
   },
+  button: '#6F00FF',
 }

@@ -11,7 +11,11 @@ const SubHeaderStyled = styled(FlexBox)`
   gap: 1em;
 `
 const IconStyled = styled.svg`
-  background-color: blue;
+  padding: 8px;
+  background-color: ${colors.button};
+  border-radius: 8px;
+  height: 40px;
+  width: 40px;
 `
 
 function SubHeader({ ...props }) {
@@ -19,7 +23,9 @@ function SubHeader({ ...props }) {
     <SubHeaderStyled {...props} direction="row" align="center">
       <InputText name="input1" placeholder="Piso, chalet o garaje..." />
       <InputText name="input2" placeholder="Madrid, Barcelona o Zaragoza..." />
-      <Icon style={{ color: 'blue' }} />
+      <IconStyled>
+        <Icon />
+      </IconStyled>
     </SubHeaderStyled>
   )
 }
