@@ -29,7 +29,7 @@ function CardHouse() {
             fontSize=".6em"
             height="25px"
             border="none"
-            cursos="pointer"
+            cursor="pointer"
             padding="0 15px 0 15px"
             textAlign="center"
             margin="0 0 5px 0"
