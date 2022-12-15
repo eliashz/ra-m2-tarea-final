@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { colors, Grid } from '../../styles'
-import { CardHouse } from '../molecules'
+import { CardHouse, CardFull } from '../molecules'
 
 const StyledDiv = styled.div`
   background-color: ${colors.secondary};
@@ -15,7 +15,7 @@ function Body() {
   return (
     <Grid margin="2em" gap="1em">
       <Grid columns="repeat(auto-fit, minmax(10rem, 1fr))" gap="1em">
-        <CardHouse />
+        <CardFull />
         <CardHouse />
         <CardHouse />
         <CardHouse />
