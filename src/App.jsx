@@ -1,13 +1,18 @@
-import Header from './components/layout/Header'
-import SubHeader from './components/layout/SubHeader'
-import { Body } from './components/layout'
+import { Header } from './components/layout'
+import { FrontPage, Datos, MiPerfil } from './pages'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <>
       <Header />
-      <SubHeader />
-      <Body />
+      <Router>
+        <Routes>
+          <Route path="/" element={<FrontPage />} />
+          <Route path="/datos" element={<Datos />} />
+          <Route path="/perfil" element={<MiPerfil />} />
+        </Routes>
+      </Router>
     </>
   )
 }
