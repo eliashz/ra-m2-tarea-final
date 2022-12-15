@@ -5,10 +5,11 @@ import { colors } from '../../styles'
 export default function Button({
   children,
   color = colors.main,
+  backgroundColor = colors.base,
   onClick = () => {},
 }) {
   return (
-    <button type="button" onClick={onClick} style={{ backgroundColor: color }}>
+    <button type="button" onClick={onClick} style={{ backgroundColor, color }}>
       {children}
     </button>
   )
@@ -17,5 +18,6 @@ export default function Button({
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string,
+  backgroundColor: PropTypes.string,
   onClick: PropTypes.func,
 }
