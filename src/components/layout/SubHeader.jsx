@@ -12,10 +12,11 @@ const SubHeaderStyled = styled(FlexBox)`
 `
 const IconStyled = styled.svg`
   padding: 8px;
-  background-color: ${colors.button};
+  background-image: ${colors.button};
   border-radius: 8px;
   height: 40px;
   width: 40px;
+  cursor: pointer;
 `
 
 function SubHeader({ ...props }) {

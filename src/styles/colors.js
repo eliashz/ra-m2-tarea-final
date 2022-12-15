@@ -6,5 +6,5 @@ export const colors = {
     base: '#444',
     headings: '#121212',
   },
-  button: '#6F00FF',
+  button: 'linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)',
 }
