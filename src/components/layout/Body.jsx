@@ -6,7 +6,8 @@ import { Card } from '../molecules'
 const StyledDiv = styled.div`
   background-color: ${colors.secondary};
   border: 1px solid ${colors.tertiary};
-  width: 45%;
+  width: 100%;
+  margin-right: 2em;
   text-align: center;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -14,7 +15,7 @@ const StyledDiv = styled.div`
 
 function Body({ children }) {
   return (
-    <FlexBox direction="row" justify="space-between" style={{ margin: '2em' }}>
+    <Grid>
       <Grid>
         <Card />
         <Card />
@@ -27,7 +28,7 @@ function Body({ children }) {
         <Card />
       </Grid>
       <StyledDiv>Mapa</StyledDiv>
-    </FlexBox>
+    </Grid>
   )
 }
 
