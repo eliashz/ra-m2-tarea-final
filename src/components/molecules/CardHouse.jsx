@@ -6,33 +6,36 @@ const Img = styled.img`
   border-radius: 5px;
 `
 
-const TextImg = styled(Text)`
+const StyledText = styled(Text)`
   margin-left: 5px;
   margin-right: 5x;
-`
-
-const ButtonImg = styled(Button)`
-  border-radius: 10px;
 `
 function CardHouse() {
   return (
     <Card>
       <FlexBox>
         <Img src="../project/casa.jpeg" alt="Casa" />
-        <TextImg color="grey" fontSize=".8em">
+        <StyledText color="grey" fontSize=".8em">
           Piso en Barcelona, Gracia
-        </TextImg>
+        </StyledText>
         <FlexBox direction="row" justify="space-around" align="center">
           <Title color="#000" fontSize=".9em">
             939.000€
           </Title>
-          <ButtonImg
+          <Button
+            color="#fff"
             backgroundColor="steelblue"
             borderRadius="10px"
-            color="#fff"
+            fontSize=".6em"
+            height="25px"
+            border="none"
+            cursos="pointer"
+            padding="0 15px 0 15px"
+            textAlign="center"
+            margin="0 0 5px 0"
           >
             Localizar
-          </ButtonImg>
+          </Button>
         </FlexBox>
       </FlexBox>
     </Card>
