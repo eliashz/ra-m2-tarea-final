@@ -15,36 +15,25 @@ function Body() {
   return (
     <Grid margin="2em" gap="1em">
       <Grid columns="repeat(auto-fit, minmax(10rem, 1fr))" gap="1em">
-        <Card>
-          <CardHouse />
-        </Card>
-        <Card>
-          <CardHouse />
-        </Card>
-        <Card>
-          <CardHouse />
-        </Card>
-        <Card>
-          <CardHouse />
-        </Card>
-        <Card>
-          <CardHouse />
-        </Card>
-        <Card>
-          <CardHouse />
-        </Card>
-        <Card>
-          <CardHouse />
-        </Card>
-        <Card>
-          <CardHouse />
-        </Card>
-        <Card>
-          <CardHouse />
-        </Card>
-        <Card>
-          <CardHouse />
-        </Card>
+        <CardHouse />
+
+        <CardHouse />
+
+        <CardHouse />
+
+        <CardHouse />
+
+        <CardHouse />
+
+        <CardHouse />
+
+        <CardHouse />
+
+        <CardHouse />
+
+        <CardHouse />
+
+        <CardHouse />
       </Grid>
       <StyledDiv>Mapa</StyledDiv>
     </Grid>
