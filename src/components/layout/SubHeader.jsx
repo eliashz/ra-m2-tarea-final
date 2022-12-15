@@ -5,7 +5,6 @@ import { Icon, InputText } from '../atoms'
 
 const SubHeaderStyled = styled(FlexBox)`
   padding: 0.7em 2rem;
-  border-top: 2px solid ${colors.tertiary};
   border-bottom: 2px solid ${colors.tertiary};
   background-color: ${colors.secondary};
   gap: 1em;

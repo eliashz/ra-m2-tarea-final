@@ -8,7 +8,7 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path="/" element={<FrontPage />} />
+          <Route path="/" element={<FrontPage />} exact />
           <Route path="/datos" element={<Datos />} />
           <Route path="/perfil" element={<MiPerfil />} />
         </Routes>
