@@ -5,7 +5,7 @@
 - `npm i`
 - `npm run dev`
 
-### [CodeSandBox](https://codesandbox.io/p/github/eliashz/ra-m2-tarea-final/draft/friendly-rumple)
+### [CodeSandBox](https://codesandbox.io/p/github/eliashz/ra-m2-tarea-final/draft/red-forest)
 
 ### Documentación
 
