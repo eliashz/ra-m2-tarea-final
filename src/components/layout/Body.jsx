@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { colors, Grid } from '../../styles'
-import { Card } from '../molecules'
+import { Card } from '../atoms'
+import { CardHouse } from '../molecules'
 
 const StyledDiv = styled.div`
   background-color: ${colors.secondary};
@@ -14,15 +15,36 @@ function Body() {
   return (
     <Grid margin="2em" gap="1em">
       <Grid columns="repeat(auto-fit, minmax(10rem, 1fr))" gap="1em">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card>
+          <CardHouse />
+        </Card>
+        <Card>
+          <CardHouse />
+        </Card>
+        <Card>
+          <CardHouse />
+        </Card>
+        <Card>
+          <CardHouse />
+        </Card>
+        <Card>
+          <CardHouse />
+        </Card>
+        <Card>
+          <CardHouse />
+        </Card>
+        <Card>
+          <CardHouse />
+        </Card>
+        <Card>
+          <CardHouse />
+        </Card>
+        <Card>
+          <CardHouse />
+        </Card>
+        <Card>
+          <CardHouse />
+        </Card>
       </Grid>
       <StyledDiv>Mapa</StyledDiv>
     </Grid>
