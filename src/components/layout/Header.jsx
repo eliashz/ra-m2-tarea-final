@@ -10,7 +10,6 @@ const HeaderStyled = styled(FlexBox)`
 `
 const UlStyled = styled(FlexBox)`
   font-size: 0.7em;
-  color: ${colors.main};
   gap: 1em;
 `
 
@@ -21,6 +20,11 @@ const LiStyled = styled.li`
       font-weight: bold;
 `
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${colors.main};
+`
+
 function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between" align="center">
@@ -29,13 +33,13 @@ function Header() {
       </Title>
       <UlStyled direction="row">
         <LiStyled>
-          <Link to="/">Buscador</Link>
+          <StyledLink to="/">Buscador</StyledLink>
         </LiStyled>
         <LiStyled>
-          <Link to="/datos">Datos</Link>
+          <StyledLink to="/datos">Datos</StyledLink>
         </LiStyled>
         <LiStyled>
-          <Link to="/perfil">Mi Perfil</Link>
+          <StyledLink to="/perfil">Mi Perfil</StyledLink>
         </LiStyled>
       </UlStyled>
     </HeaderStyled>

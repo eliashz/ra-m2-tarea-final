@@ -1,19 +1,17 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Header } from './components/layout'
 import { FrontPage, Datos, MiPerfil } from './pages'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Router>
-        <Routes>
-          <Route path="/" element={<FrontPage />} exact />
-          <Route path="/datos" element={<Datos />} />
-          <Route path="/perfil" element={<MiPerfil />} />
-        </Routes>
-      </Router>
-    </>
+      <Routes>
+        <Route path="/" element={<FrontPage />} exact />
+        <Route path="/datos" element={<Datos />} />
+        <Route path="/perfil" element={<MiPerfil />} />
+      </Routes>
+    </Router>
   )
 }
 
