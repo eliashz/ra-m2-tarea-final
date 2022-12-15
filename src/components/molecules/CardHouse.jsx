@@ -16,7 +16,7 @@ function CardHouse() {
       <FlexBox>
         <Img src="../project/casa.jpeg" alt="Casa" />
         <StyledText color="grey" fontSize=".8em">
-          Piso en Barcelona, Gracia
+          Piso en Barcelona, Grac...
         </StyledText>
         <FlexBox direction="row" justify="space-around" align="center">
           <Title color="#000" fontSize=".9em">
