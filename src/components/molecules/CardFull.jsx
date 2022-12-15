@@ -12,18 +12,18 @@ const Img = styled.img`
 const StyledCard = styled(Card)`
   position: relative;
   display: inline-block;
-  text-align: start;
+  text-align: end;
 `
 const StyledTitle = styled(Text)`
   position: absolute;
-  top: 150px;
-  left: 10px;
+  top: 152px;
+  right: 10px;
 `
 
 function CardFull() {
   return (
     <StyledCard>
-      <StyledTitle color="#fff" fontSize=".9em">
+      <StyledTitle color="#000" fontSize=".9em">
         Piso en Barcelona, Grac... 939.000€
       </StyledTitle>
       <Img src="../project/casa.jpeg" alt="Casa" />
