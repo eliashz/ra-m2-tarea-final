@@ -16,8 +16,7 @@ const StyledButton = styled(Button)`
   font-size: 0.7em;
   height: 20px;
   width: 90px;
-  border: none;
-  cursor: pointer;
+
 `
 
 function CardHouse() {
@@ -32,7 +31,11 @@ function CardHouse() {
           <Title color="#000" fontSize=".9em">
             939.000€
           </Title>
-          <StyledButton color="#fff" background="steelblue">
+          <StyledButton
+            color="#fff"
+            background="#4682b4"
+            hoverColor="#4682b4CC"
+          >
             Localizar
           </StyledButton>
         </FlexBox>

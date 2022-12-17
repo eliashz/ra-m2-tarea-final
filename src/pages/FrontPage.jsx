@@ -15,8 +15,6 @@ function FrontPage() {
     font-size: 0.7em;
     height: 25px;
     width: 120px;
-    border: none;
-    cursor: pointer;
   `
 
   return (
@@ -24,7 +22,7 @@ function FrontPage() {
       <SubHeader />
       <Body />
       <StyledFlexBox justify="center" direction="row">
-        <StyledButton color="#fff" background="#4281e3">
+        <StyledButton color="#fff" background="#4281e3" hoverColor="#4281e3CC">
           Cargar más
         </StyledButton>
       </StyledFlexBox>
