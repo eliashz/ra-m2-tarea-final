@@ -25,8 +25,8 @@ function CardHouse() {
           <Button
             color="#fff"
             backgroundColor="steelblue"
-            borderRadius="10px"
-            fontSize=".6em"
+            borderRadius="7px"
+            fontSize=".7em"
             height="25px"
             border="none"
             cursor="pointer"
