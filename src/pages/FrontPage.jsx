@@ -18,12 +18,13 @@ function FrontPage() {
     border: none;
     cursor: pointer;
   `
+
   return (
     <>
       <SubHeader />
       <Body />
       <StyledFlexBox justify="center" direction="row">
-        <StyledButton color="#fff" backgroundColor="#4281e3">
+        <StyledButton color="#fff" background="#4281e3">
           Cargar más
         </StyledButton>
       </StyledFlexBox>

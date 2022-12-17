@@ -10,6 +10,16 @@ const StyledText = styled(Text)`
   margin-left: 5px;
   margin-right: 5x;
 `
+
+const StyledButton = styled(Button)`
+  border-radius: 7px;
+  font-size: 0.7em;
+  height: 20px;
+  width: 90px;
+  border: none;
+  cursor: pointer;
+`
+
 function CardHouse() {
   return (
     <Card>
@@ -22,20 +32,9 @@ function CardHouse() {
           <Title color="#000" fontSize=".9em">
             939.000€
           </Title>
-          <Button
-            color="#fff"
-            backgroundColor="steelblue"
-            borderRadius="7px"
-            fontSize=".7em"
-            height="25px"
-            border="none"
-            cursor="pointer"
-            padding="0 15px 0 15px"
-            textAlign="center"
-            margin="0 0 5px 0"
-          >
+          <StyledButton color="#fff" background="steelblue">
             Localizar
-          </Button>
+          </StyledButton>
         </FlexBox>
       </FlexBox>
     </Card>

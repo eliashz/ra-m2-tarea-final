@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 const Button = styled.button`
-  background-color: ${( {backgroundColor}) => backgroundColor || colors.secondary};
+  background-color: ${( {background}) => background || colors.secondary};
   color: ${( {color}) => color || colors.main};
 `
 
