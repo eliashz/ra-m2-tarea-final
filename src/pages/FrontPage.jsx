@@ -9,23 +9,23 @@ function FrontPage() {
     width: 50%;
     text-align: center;
   `
+
+  const StyledButton = styled(Button)`
+    border-radius: 7px;
+    font-size: 0.7em;
+    height: 25px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+  `
   return (
     <>
       <SubHeader />
       <Body />
       <StyledFlexBox justify="center" direction="row">
-        <Button
-          color="#fff"
-          backgroundColor="#4281e3"
-          borderRadius="7px"
-          fontSize=".7em"
-          height="25px"
-          width="120px"
-          border="none"
-          cursor="pointer"
-        >
+        <StyledButton color="#fff" backgroundColor="#4281e3">
           Cargar más
-        </Button>
+        </StyledButton>
       </StyledFlexBox>
     </>
   )
