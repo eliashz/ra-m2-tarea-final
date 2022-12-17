@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { FlexBox } from '../../styles'
 import { Button, Card, Text, Title } from '../atoms'
 
-const Img = styled.img`
+const StyledImg = styled.img`
   border-radius: 5px;
 `
 
@@ -24,7 +24,7 @@ function CardHouse() {
   return (
     <Card>
       <FlexBox>
-        <Img src="../project/casa.jpeg" alt="Casa" />
+        <StyledImg src="../project/casa.jpeg" alt="Casa" />
         <StyledText color="grey" fontSize=".8em">
           Piso en Barcelona, Grac...
         </StyledText>

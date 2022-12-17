@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import React from 'react'
 import { Card, Text } from '../atoms'
 
-const Img = styled.img`
+const StyledImg = styled.img`
   border-radius: 5px;
   height: 215px;
   width: 200px;
@@ -26,7 +26,7 @@ function CardFull() {
       <StyledTitle color="#000" fontSize=".9em">
         Piso en Barcelona, Grac... 939.000€
       </StyledTitle>
-      <Img src="../project/casa.jpeg" alt="Casa" />
+      <StyledImg src="../project/casa.jpeg" alt="Casa" />
     </StyledCard>
   )
 }
