@@ -7,7 +7,6 @@ import { Button } from '../components/atoms'
 function FrontPage() {
   const StyledFlexBox = styled(FlexBox)`
     width: 50%;
-    text-align: center;
   `
 
   const StyledButton = styled(Button)`
