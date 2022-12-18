@@ -15,9 +15,10 @@ const UlStyled = styled(FlexBox)`
 
 const LiStyled = styled.li`
   cursor: pointer;
-  list-style: none; 
+  list-style: none;
   &:hover {
-      font-weight: bold;
+    font-weight: bold;
+  }
 `
 
 const StyledLink = styled(Link)`
@@ -31,6 +32,8 @@ function Header() {
       <Title as="h1" fontSize=".6em">
         MIPISO.com
       </Title>
+      {/* Crea una molecula de menu */}
+      {/* Define el menú en constants */}
       <UlStyled direction="row">
         <LiStyled>
           <StyledLink to="/">Buscador</StyledLink>

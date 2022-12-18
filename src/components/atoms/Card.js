@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// No usaria width/height fijos.
 const Card = styled.div`
   height: 215px;
   width: 200px;
