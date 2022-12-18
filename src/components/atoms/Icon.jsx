@@ -1,5 +1,9 @@
 import React from 'react'
 
+// Seria necesario renderizar más de un icono para generalizar.
+// Te recomiendo que uses un icono de una tipografía, cargando la tipo y usando el componente para renderiza el que quieras en cada momento según las props.
+// https://fonts.google.com/icons
+// Falta validación por propTypes
 function Icon() {
   return (
     <svg

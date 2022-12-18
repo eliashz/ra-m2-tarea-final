@@ -21,7 +21,9 @@ const IconStyled = styled.svg`
 function SubHeader({ ...props }) {
   return (
     <SubHeaderStyled {...props} direction="row" align="center">
+      {/* Esto debería de ser un Select */}
       <InputText name="input1" placeholder="Piso, chalet o garaje..." />
+      {/* Esto debería de ser un Select */}
       <InputText name="input2" placeholder="Madrid, Barcelona o Zaragoza..." />
       <IconStyled>
         <Icon />
