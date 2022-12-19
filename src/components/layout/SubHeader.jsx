@@ -19,11 +19,33 @@ const IconStyled = styled.span`
   cursor: pointer;
 `
 
-function SubHeader({ ...props }) {
+function SubHeader() {
   return (
-    <SubHeaderStyled {...props} direction="row" align="center">
-      <InputText name="input1" placeholder="Piso, chalet o garaje..." />
-      <InputText name="input2" placeholder="Madrid, Barcelona o Zaragoza..." />
+    <SubHeaderStyled direction="row" align="center">
+      <InputText
+        id="1"
+        name="input1"
+        placeholder="Piso, chalet o garaje..."
+        borderRadius="5px"
+        textDecoration="none"
+        border="1px solid grey"
+        fontSize=".8em"
+        padding="9px 0 9px 15px"
+        width="35%"
+        boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
+      />
+      <InputText
+        id="2"
+        name="input2"
+        placeholder="Madrid, Barcelona o Zaragoza..."
+        borderRadius="5px"
+        textDecoration="none"
+        border="1px solid grey"
+        fontSize=".8em"
+        padding="9px 0 9px 15px"
+        width="35%"
+        boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
+      />
       <IconStyled>
         <Icon>search</Icon>
       </IconStyled>
