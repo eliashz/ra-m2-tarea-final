@@ -8,6 +8,10 @@ export const dimensions = {
   font: {
     base: "16px",
     h1: "52px",
-    h2: "...",
+    h2: "46px",
+    h3: "40px",
+    h4: "34px",
+    h5: "28px",
+    h6: "22px",
   },
 };
