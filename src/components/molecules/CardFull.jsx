@@ -4,8 +4,8 @@ import { Card, Text } from '../atoms'
 
 const StyledImg = styled.img`
   border-radius: 5px;
-  height: 215px;
-  width: 200px;
+  height: 11em;
+  width: 10em;
   object-fit: cover;
 `
 
