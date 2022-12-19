@@ -9,12 +9,13 @@ const SubHeaderStyled = styled(FlexBox)`
   background-color: ${colors.secondary};
   gap: 1em;
 `
-const IconStyled = styled.svg`
-  padding: 8px;
+const IconStyled = styled.span`
+  font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40;
   background-image: ${colors.button};
+  color: white;
   border-radius: 8px;
-  height: 40px;
-  width: 40px;
+  padding: 8px;
+  height: 2em;
   cursor: pointer;
 `
 
