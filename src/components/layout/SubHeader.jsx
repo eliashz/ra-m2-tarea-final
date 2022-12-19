@@ -24,7 +24,7 @@ function SubHeader({ ...props }) {
       <InputText name="input1" placeholder="Piso, chalet o garaje..." />
       <InputText name="input2" placeholder="Madrid, Barcelona o Zaragoza..." />
       <IconStyled>
-        <Icon />
+        <Icon>search</Icon>
       </IconStyled>
     </SubHeaderStyled>
   )
