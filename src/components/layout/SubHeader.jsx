@@ -37,7 +37,7 @@ function SubHeader() {
       </Select>
       <Select
         id="2"
-        name="input2"
+        name="select"
         borderRadius="5px"
         textDecoration="none"
         border="1px solid grey"
