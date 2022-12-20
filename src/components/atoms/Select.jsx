@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
-import React from 'react'
+import { colors } from '../../styles'
 
 export default function Select({
+  children,
   id,
   name,
   onChange,
-  placeholder,
   borderRadius,
   textDecoration,
   border,
@@ -13,6 +13,7 @@ export default function Select({
   padding,
   width,
   boxShadow,
+  color = colors.main,
 }) {
   return (
     <select
@@ -20,7 +21,6 @@ export default function Select({
       id={id}
       name={name}
       onChange={onChange}
-      placeholder={placeholder}
       style={{
         outline: 'none',
         borderRadius,
@@ -30,16 +30,19 @@ export default function Select({
         padding,
         width,
         boxShadow,
+        color,
       }}
-    />
+    >
+      <option>{children}</option>
+    </select>
   )
 }
 
 Select.propTypes = {
+  children: PropTypes.node.isRequired,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func,
-  placeholder: PropTypes.string,
   borderRadius: PropTypes.string,
   textDecoration: PropTypes.string,
   border: PropTypes.string,
@@ -47,4 +50,5 @@ Select.propTypes = {
   padding: PropTypes.string,
   width: PropTypes.string,
   boxShadow: PropTypes.string,
+  color: PropTypes.string,
 }
