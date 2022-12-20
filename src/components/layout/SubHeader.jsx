@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { colors, FlexBox } from '../../styles'
-import { Icon, InputText } from '../atoms'
+import { Icon, Select } from '../atoms'
 
 const SubHeaderStyled = styled(FlexBox)`
   padding: 0.7em 2rem;
@@ -22,7 +22,7 @@ const IconStyled = styled.span`
 function SubHeader() {
   return (
     <SubHeaderStyled direction="row" align="center">
-      <InputText
+      <Select
         id="1"
         name="input1"
         placeholder="Piso, chalet o garaje..."
@@ -34,7 +34,7 @@ function SubHeader() {
         width="35%"
         boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
       />
-      <InputText
+      <Select
         id="2"
         name="input2"
         placeholder="Madrid, Barcelona o Zaragoza..."

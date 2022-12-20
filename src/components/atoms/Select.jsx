@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-export default function InputText({
+export default function Select({
   id,
   name,
   onChange,
@@ -15,7 +15,7 @@ export default function InputText({
   boxShadow,
 }) {
   return (
-    <input
+    <select
       type="text"
       id={id}
       name={name}
@@ -35,7 +35,7 @@ export default function InputText({
   )
 }
 
-InputText.propTypes = {
+Select.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func,
