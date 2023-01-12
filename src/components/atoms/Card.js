@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+// No debería de tener valores fijos
+// Los valores base deberían de venir de styles
 const Card = styled.div`
   height: 11em;
   width: 10em;

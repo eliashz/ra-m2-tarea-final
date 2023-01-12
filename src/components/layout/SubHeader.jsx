@@ -19,6 +19,9 @@ const IconStyled = styled.span`
   cursor: pointer;
 `
 
+// Mirar comentarios de Select
+// Falta label al select
+
 function SubHeader() {
   return (
     <SubHeaderStyled direction="row" align="center">
