@@ -22,6 +22,7 @@ export default function Select({
       name={name}
       onChange={onChange}
       style={{
+        // Eliminar este style y usar styled-components
         outline: 'none',
         borderRadius,
         textDecoration,
@@ -33,11 +34,13 @@ export default function Select({
         color,
       }}
     >
+      {/* Falta value y si se pasan 30 opciones, hay que mapear en lugar de tener una */}
       <option>{children}</option>
     </select>
   )
 }
 
+// Demasiadas props, sobretodo para styles
 Select.propTypes = {
   children: PropTypes.node.isRequired,
   id: PropTypes.string.isRequired,
