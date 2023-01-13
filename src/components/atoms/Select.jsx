@@ -1,9 +1,8 @@
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { colors } from '../../styles'
+import {Properties} from '../atoms';
 
 export default function Select({
-  children,
   id,
   name,
   onChange,
@@ -15,6 +14,7 @@ export default function Select({
   padding,
   width,
   boxShadow,
+  values,
   color = colors.main,
 }) {
   return (
@@ -35,16 +35,17 @@ export default function Select({
         color,
       }}
     >
-      <option value={children}>{children}</option>
+      {values?.map((value) => <option key={value.id} value={value.name}>{value.name}</option>)}
+      
     </select>
   )
 }
 
 Select.propTypes = {
-  children: PropTypes.node.isRequired,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func,
+  outline: PropTypes.string,
   borderRadius: PropTypes.string,
   textDecoration: PropTypes.string,
   border: PropTypes.string,
@@ -52,5 +53,6 @@ Select.propTypes = {
   padding: PropTypes.string,
   width: PropTypes.string,
   boxShadow: PropTypes.string,
+  values: PropTypes.objectOf,
   color: PropTypes.string,
 }

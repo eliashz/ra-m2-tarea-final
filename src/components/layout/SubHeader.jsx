@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { colors, FlexBox } from '../../styles'
-import { Icon, Select } from '../atoms'
+import { Icon, Select, Cities, Properties } from '../atoms'
 
 const SubHeaderStyled = styled(FlexBox)`
   padding: 0.7em 2rem;
@@ -33,9 +33,9 @@ function SubHeader() {
         padding="9px 0 9px 15px"
         width="35%"
         boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
-      >
-        Piso, chalet o garaje...
-      </Select>
+        values={Properties}
+        />
+        
       <Select
         id="2"
         name="select2"
@@ -47,9 +47,8 @@ function SubHeader() {
         padding="9px 0 9px 15px"
         width="35%"
         boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
-      >
-        Madrid, Barcelona o Zaragoza...
-      </Select>
+        values={Cities}
+        />
       <IconStyled>
         <Icon>search</Icon>
       </IconStyled>
