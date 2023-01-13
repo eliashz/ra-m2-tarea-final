@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { colors } from '../../styles'
 
@@ -6,6 +7,7 @@ export default function Select({
   id,
   name,
   onChange,
+  outline,
   borderRadius,
   textDecoration,
   border,
@@ -22,7 +24,7 @@ export default function Select({
       name={name}
       onChange={onChange}
       style={{
-        outline: 'none',
+        outline,
         borderRadius,
         textDecoration,
         border,
@@ -33,7 +35,7 @@ export default function Select({
         color,
       }}
     >
-      <option>{children}</option>
+      <option value={children}>{children}</option>
     </select>
   )
 }

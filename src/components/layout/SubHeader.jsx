@@ -25,6 +25,7 @@ function SubHeader() {
       <Select
         id="1"
         name="select1"
+        outline= "none"
         borderRadius="5px"
         textDecoration="none"
         border="1px solid grey"
@@ -37,7 +38,8 @@ function SubHeader() {
       </Select>
       <Select
         id="2"
-        name="select"
+        name="select2"
+        outline= "none"
         borderRadius="5px"
         textDecoration="none"
         border="1px solid grey"
