@@ -35,7 +35,7 @@ export default function Select({
         color,
       }}
     >
-      {values?.map((value) => <option key={value.id} value={value.name}>{value.name}</option>)}
+      {values.map((value) => <option key={value.id} value={value.name}>{value.name}</option>)}
       
     </select>
   )
@@ -53,6 +53,6 @@ Select.propTypes = {
   padding: PropTypes.string,
   width: PropTypes.string,
   boxShadow: PropTypes.string,
-  values: PropTypes.objectOf,
+  values: PropTypes.arrayOf(PropTypes.objectOf),
   color: PropTypes.string,
 }
