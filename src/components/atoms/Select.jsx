@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { colors } from '../../styles'
 
 const SelectStyled = styled.select`
   outline: none;
@@ -14,39 +13,9 @@ const SelectStyled = styled.select`
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 `
 
-export default function Select({
-  id,
-  name,
-  onChange,
-  outline,
-  borderRadius,
-  textDecoration,
-  border,
-  fontSize,
-  padding,
-  width,
-  boxShadow,
-  values,
-  color = colors.main,
-}) {
+export default function Select({ id, name, onChange, values }) {
   return (
-    <SelectStyled
-      type="text"
-      id={id}
-      name={name}
-      onChange={onChange}
-      style={{
-        outline,
-        borderRadius,
-        textDecoration,
-        border,
-        fontSize,
-        padding,
-        width,
-        boxShadow,
-        color,
-      }}
-    >
+    <SelectStyled type="text" id={id} name={name} onChange={onChange}>
       {values.map((value) => (
         <option key={value.id} value={value.name}>
           {value.name}
@@ -60,14 +29,5 @@ Select.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func,
-  outline: PropTypes.string,
-  borderRadius: PropTypes.string,
-  textDecoration: PropTypes.string,
-  border: PropTypes.string,
-  fontSize: PropTypes.string,
-  padding: PropTypes.string,
-  width: PropTypes.string,
-  boxShadow: PropTypes.string,
   values: PropTypes.arrayOf(PropTypes.objectOf),
-  color: PropTypes.string,
 }
