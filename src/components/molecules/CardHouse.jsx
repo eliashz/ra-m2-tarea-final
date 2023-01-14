@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { FlexBox } from '../../styles'
-import { Button, Card, Text, Title } from '../atoms'
+import { Button, Card, Text } from '../atoms'
 
 const StyledImg = styled.img`
   border-radius: 5px;
@@ -16,7 +16,6 @@ const StyledButton = styled(Button)`
   font-size: 0.7em;
   height: 20px;
   width: 90px;
-
 `
 
 function CardHouse() {
@@ -28,9 +27,9 @@ function CardHouse() {
           Piso en Barcelona, Grac...
         </StyledText>
         <FlexBox direction="row" justify="space-around" align="center">
-          <Title color="#000" fontSize=".9em">
+          <Text color="#000" fontSize=".9em">
             939.000€
-          </Title>
+          </Text>
           <StyledButton
             color="#fff"
             background="#4682b4"
