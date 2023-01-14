@@ -22,33 +22,8 @@ const IconStyled = styled.span`
 function SubHeader() {
   return (
     <SubHeaderStyled direction="row" align="center">
-      <Select
-        id="1"
-        name="select1"
-        outline= "none"
-        borderRadius="5px"
-        textDecoration="none"
-        border="1px solid grey"
-        fontSize=".8em"
-        padding="9px 0 9px 15px"
-        width="35%"
-        boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
-        values={Properties}
-        />
-        
-      <Select
-        id="2"
-        name="select2"
-        outline= "none"
-        borderRadius="5px"
-        textDecoration="none"
-        border="1px solid grey"
-        fontSize=".8em"
-        padding="9px 0 9px 15px"
-        width="35%"
-        boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
-        values={Cities}
-        />
+      <Select id="1" name="select1" values={Properties} />
+      <Select id="2" name="select2" values={Cities} />
       <IconStyled>
         <Icon>search</Icon>
       </IconStyled>
