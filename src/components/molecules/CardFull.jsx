@@ -15,7 +15,7 @@ const StyledCard = styled(Card)`
   display: inline-block;
   text-align: end;
 `
-const StyledTitle = styled(Text)`
+const StyledText = styled(Text)`
   position: absolute;
   top: 152px;
   right: 10px;
@@ -24,9 +24,9 @@ const StyledTitle = styled(Text)`
 function CardFull() {
   return (
     <StyledCard>
-      <StyledTitle color="#000" fontSize=".9em">
+      <StyledText color="#000" fontSize=".9em">
         Piso en Barcelona, Grac... 939.000€
-      </StyledTitle>
+      </StyledText>
       <StyledImg src="../project/casa.jpeg" alt="Casa" />
     </StyledCard>
   )

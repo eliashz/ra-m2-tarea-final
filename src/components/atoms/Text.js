@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors, dimensions, fonts } from '../../styles'
+import { colors, dimensions } from '../../styles'
 
 const Text = styled.p`
   color: ${({ color }) => color || colors.font.base};
