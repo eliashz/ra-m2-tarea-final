@@ -22,7 +22,9 @@ const IconStyled = styled.span`
 function SubHeader() {
   return (
     <SubHeaderStyled direction="row" align="center">
+      {/* Falta Label */}
       <Select id="1" name="select1" values={Properties} />
+      {/* Falta Label */}
       <Select id="2" name="select2" values={Cities} />
       <IconStyled>
         <Icon>search</Icon>
