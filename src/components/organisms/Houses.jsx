@@ -6,6 +6,7 @@ function Houses() {
   return (
     <Grid columns="repeat(auto-fit, minmax(10rem, 1fr))" gap="1em">
       <CardFull />
+      {/* Crea un array vacio e itera sobre el, intentalo otra vez por favor */}
       <CardHouse />
       <CardHouse />
       <CardHouse />
