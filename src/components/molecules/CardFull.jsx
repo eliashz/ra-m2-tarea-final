@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import React from 'react'
 import { Card, Text } from '../atoms'
-import { dimensions } from '../../styles'
 
 const StyledImg = styled.img`
   object-fit: cover;
