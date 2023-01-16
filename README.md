@@ -1,5 +1,9 @@
 # Módulo 2: Tarea Final
 
+Práctica en la que se intenta recrear el siguiente diseño con React, utilizando Styled Components y un diseño atómico.
+<br>  
+<img src="project/1.png" width="500">
+
 ### Instrucciones
 
 - `npm i`
