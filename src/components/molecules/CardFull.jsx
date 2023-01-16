@@ -17,8 +17,8 @@ const StyledCard = styled(Card)`
 `
 const StyledText = styled(Text)`
   position: absolute;
-  top: 75%;
   right: 5%;
+  bottom: 0.5%;
 `
 
 function CardFull() {
