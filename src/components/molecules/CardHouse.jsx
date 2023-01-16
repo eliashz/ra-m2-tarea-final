@@ -1,21 +1,20 @@
 import styled from 'styled-components'
-import { FlexBox } from '../../styles'
+import { dimensions, FlexBox } from '../../styles'
 import { Button, Card, Text } from '../atoms'
 
 const StyledImg = styled.img`
-  border-radius: 5px;
+  border-radius: ${dimensions.border};
 `
 
 const StyledText = styled(Text)`
-  margin-left: 5px;
-  margin-right: 5x;
+  margin-left: 5%;
+  margin-right: 5%;
 `
 
 const StyledButton = styled(Button)`
-  border-radius: 7px;
+  border-radius: ${dimensions.border};
   font-size: 0.7em;
-  height: 20px;
-  width: 90px;
+  padding: 2% 5%;
 `
 
 function CardHouse() {
