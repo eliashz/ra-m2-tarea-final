@@ -4,6 +4,9 @@ import { Card, Text } from '../atoms'
 
 const StyledImg = styled.img`
   object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
 `
 
 const StyledCard = styled(Card)`
@@ -13,8 +16,8 @@ const StyledCard = styled(Card)`
 `
 const StyledText = styled(Text)`
   position: absolute;
-  top: 152px;
-  right: 10px;
+  top: 75%;
+  right: 5%;
 `
 
 function CardFull() {
