@@ -12,7 +12,6 @@ const StyledImg = styled.img`
 
 const StyledCard = styled(Card)`
   position: relative;
-  display: inline-block;
   text-align: end;
 `
 const StyledText = styled(Text)`
