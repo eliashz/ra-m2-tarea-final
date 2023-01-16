@@ -4,10 +4,10 @@ import { dimensions, border } from '../../styles'
 
 const SelectStyled = styled.select`
   outline: none;
-  border-radius: ${dimensions['border-radius']};
+  border-radius: ${dimensions.border};
   text-decoration: none;
   border: ${border.solidGrey};
-  font-size: ${dimensions['font-size']};
+  font-size: ${dimensions.fontSize};
   padding: 9px 0 9px 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;

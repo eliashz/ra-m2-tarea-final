@@ -14,6 +14,6 @@ export const dimensions = {
     h5: '28px',
     h6: '22px',
   },
-  'border-radius': '5px',
-  'font-size': '.8em',
+  border: '5px',
+  fontSize: '.8em',
 }
