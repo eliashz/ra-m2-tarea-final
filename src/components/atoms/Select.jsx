@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import { dimensions, border } from '../../styles'
 
 const SelectStyled = styled.select`
   outline: none;
-  border-radius: 5px;
+  border-radius: ${dimensions['border-radius']};
   text-decoration: none;
-  border: 1px solid grey;
-  font-size: 0.8em;
+  border: ${border.solidGrey};
+  font-size: ${dimensions['font-size']};
   padding: 9px 0 9px 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
