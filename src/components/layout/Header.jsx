@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colors, FlexBox } from '../../styles'
+import { colors, FlexBox, fonts } from '../../styles'
 import { Text } from '../atoms'
 import { Menu } from '../molecules'
 
@@ -12,7 +12,7 @@ const HeaderStyled = styled(FlexBox)`
 function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between" align="center">
-      <Text as="h1" fontSize=".6em">
+      <Text as="h1" fontSize=".6em" fontFamily={fonts.title}>
         MIPISO.com
       </Text>
       <Menu />
