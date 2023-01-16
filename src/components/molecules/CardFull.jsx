@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import React from 'react'
 import { Card, Text } from '../atoms'
+import { dimensions } from '../../styles'
 
 const StyledImg = styled.img`
   object-fit: cover;
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: ${dimensions.border};
 `
 
 const StyledCard = styled(Card)`
