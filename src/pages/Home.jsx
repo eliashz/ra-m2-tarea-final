@@ -4,7 +4,7 @@ import { Body, SubHeader } from '../components/layout'
 import { FlexBox } from '../styles'
 import { Button } from '../components/atoms'
 
-function FrontPage() {
+function Home() {
   const StyledFlexBox = styled(FlexBox)`
     width: 50%;
   `
@@ -29,4 +29,4 @@ function FrontPage() {
   )
 }
 
-export default FrontPage
+export default Home
