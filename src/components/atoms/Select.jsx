@@ -29,7 +29,7 @@ export default function Select({
       onChange={onChange}
       style={{ width }}
     >
-      <option value disabled>
+      <option selected disabled>
         {defaultText}
       </option>
       {values.map((value) => (
