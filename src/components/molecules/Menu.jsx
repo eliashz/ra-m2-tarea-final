@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { colors, menu, FlexBox } from '../../styles'
+import { colors, FlexBox } from '../../styles'
+import { paths } from '../../constants'
 
 const UlStyled = styled(FlexBox)`
   font-size: 0.7em;
@@ -24,13 +25,13 @@ function Menu() {
   return (
     <UlStyled direction="row">
       <LiStyled>
-        <StyledLink to={menu.buscador}>Buscador</StyledLink>
+        <StyledLink to={paths.home}>Buscador</StyledLink>
       </LiStyled>
       <LiStyled>
-        <StyledLink to={menu.datos}>Datos</StyledLink>
+        <StyledLink to={paths.data}>Datos</StyledLink>
       </LiStyled>
       <LiStyled>
-        <StyledLink to={menu.perfil}>Mi Perfil</StyledLink>
+        <StyledLink to={paths.profile}>Mi Perfil</StyledLink>
       </LiStyled>
     </UlStyled>
   )

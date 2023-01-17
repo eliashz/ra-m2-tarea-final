@@ -22,10 +22,22 @@ const IconStyled = styled.span`
 function SubHeader() {
   return (
     <SubHeaderStyled direction="row" align="center">
-      <Label id="1" />
-      <Select id="1" name="select1" values={Properties} width="35%" />
-      <Label id="2" />
-      <Select id="2" name="select2" values={Cities} width="35%" />
+      <Label id="type" />
+      <Select
+        id="type"
+        name="tipo"
+        values={Properties}
+        width="35%"
+        defaultText="Piso, casa o garaje..."
+      />
+      <Label id="city" />
+      <Select
+        id="city"
+        name="ciudad"
+        values={Cities}
+        width="35%"
+        defaultText="Madrid, Barcelona o Zaragoza..."
+      />
       <IconStyled>
         <Icon>search</Icon>
       </IconStyled>

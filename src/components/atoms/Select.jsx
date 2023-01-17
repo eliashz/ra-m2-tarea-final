@@ -13,7 +13,14 @@ const SelectStyled = styled.select`
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 `
 
-export default function Select({ id, name, onChange, values, width }) {
+export default function Select({
+  id,
+  name,
+  onChange,
+  values,
+  width,
+  defaultText,
+}) {
   return (
     <SelectStyled
       type="text"
@@ -22,6 +29,9 @@ export default function Select({ id, name, onChange, values, width }) {
       onChange={onChange}
       style={{ width }}
     >
+      <option selected disabled>
+        {defaultText}
+      </option>
       {values.map((value) => (
         <option key={value.id} value={value.name}>
           {value.name}
@@ -37,4 +47,5 @@ Select.propTypes = {
   onChange: PropTypes.func,
   values: PropTypes.arrayOf(PropTypes.objectOf),
   width: PropTypes.string,
+  defaultText: PropTypes.string,
 }
